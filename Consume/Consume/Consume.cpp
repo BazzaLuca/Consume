@@ -3,16 +3,13 @@
 
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "Headers/Engine/Engine.h"
 
 int main()
 {
-    sf::RenderWindow m_Window;
-    m_Window.create(sf::VideoMode(448, 576),
-		"Pacman",
-		sf::Style::Titlebar | sf::Style::Close);
+    Engine engine;
 
-	while (m_Window.isOpen())
-	{
-		m_Window.clear(sf::Color::Black);
-	}
+    engine.run();
+
+    return 0;
 }

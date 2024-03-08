@@ -134,6 +134,37 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Consume.cpp" />
+    <ClCompile Include="Source\Engine\Engine.cpp" />
+    <ClCompile Include="Source\GUI\Screen.cpp" />
+    <ClCompile Include="Source\GUI\ScreenManager.cpp" />
+    <ClCompile Include="Source\GUI\Screens\Levels\Level_0.cpp" />
+    <ClCompile Include="Source\GUI\Screens\MainMenuScreen.cpp" />
+    <ClCompile Include="Source\GUI\Screens\LevelManager.cpp" />
+    <ClCompile Include="Source\Player\Player.cpp" />
+    <ClCompile Include="Source\TextureHolder\TextureHolder.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\Engine\Engine.h" />
+    <ClInclude Include="Headers\GUI\Screen.h" />
+    <ClInclude Include="Headers\GUI\ScreenManager.h" />
+    <ClInclude Include="Headers\GUI\Screens\Levels\Level_0.h" />
+    <ClInclude Include="Headers\GUI\Screens\MainMenuScreen.h" />
+    <ClInclude Include="Headers\GUI\Screens\CursorEvent.h" />
+    <ClInclude Include="Headers\GUI\Screens\LevelManager.h" />
+    <ClInclude Include="Headers\Player\Player.h" />
+    <ClInclude Include="Headers\TextureHolder\TextureHolder.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Sprites\aberration_placeholder.png" />
+    <Image Include="Resources\Sprites\lab_background.png" />
+    <Image Include="Resources\Sprites\levels_button.png" />
+    <Image Include="Resources\Sprites\mainmenu_background.png" />
+    <Image Include="Resources\Sprites\quit_button.png" />
+    <Image Include="Resources\Sprites\small_aberration.png" />
+    <Image Include="Resources\Sprites\start_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\Files\scores.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

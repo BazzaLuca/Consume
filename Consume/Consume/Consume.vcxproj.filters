@@ -18,5 +18,84 @@
     <ClCompile Include="Consume.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Engine\Engine.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TextureHolder\TextureHolder.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Player\Player.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GUI\Screen.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GUI\ScreenManager.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GUI\Screens\MainMenuScreen.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GUI\Screens\LevelManager.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GUI\Screens\Levels\Level_0.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\Engine\Engine.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\TextureHolder\TextureHolder.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Player\Player.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\GUI\Screen.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\GUI\ScreenManager.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\GUI\Screens\MainMenuScreen.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\GUI\Screens\CursorEvent.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\GUI\Screens\LevelManager.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\GUI\Screens\Levels\Level_0.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Sprites\lab_background.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="Resources\Sprites\aberration_placeholder.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="Resources\Sprites\mainmenu_background.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="Resources\Sprites\start_button.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="Resources\Sprites\levels_button.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="Resources\Sprites\quit_button.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="Resources\Sprites\small_aberration.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\Files\scores.txt" />
   </ItemGroup>
 </Project>
