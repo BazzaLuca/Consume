@@ -88,7 +88,7 @@ void MainMenuScreen::input(sf::RenderWindow& renderWindow)
 			{
 				std::cout << "start" << std::endl;
 				if (this->m_LastLevelIndex == 0)
-				{
+				{					
 					this->m_ScreenManagerPointer->switchScreen("Level_0");
 				}
 				else if (this->m_LastLevelIndex == 1)

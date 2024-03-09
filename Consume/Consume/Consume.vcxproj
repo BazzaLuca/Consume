@@ -156,14 +156,18 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources\Sprites\aberration_placeholder.png" />
+    <Image Include="Resources\Sprites\brick.png" />
     <Image Include="Resources\Sprites\lab_background.png" />
     <Image Include="Resources\Sprites\levels_button.png" />
     <Image Include="Resources\Sprites\mainmenu_background.png" />
+    <Image Include="Resources\Sprites\MonstersBGLayer0.png" />
+    <Image Include="Resources\Sprites\platform.png" />
     <Image Include="Resources\Sprites\quit_button.png" />
     <Image Include="Resources\Sprites\small_aberration.png" />
     <Image Include="Resources\Sprites\start_button.png" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Resources\Files\level_0.txt" />
     <Text Include="Resources\Files\scores.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

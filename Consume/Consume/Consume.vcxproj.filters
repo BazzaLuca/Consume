@@ -94,8 +94,18 @@
     <Image Include="Resources\Sprites\small_aberration.png">
       <Filter>File di risorse</Filter>
     </Image>
+    <Image Include="Resources\Sprites\MonstersBGLayer0.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="Resources\Sprites\platform.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="Resources\Sprites\brick.png">
+      <Filter>File di risorse</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Resources\Files\scores.txt" />
+    <Text Include="Resources\Files\level_0.txt" />
   </ItemGroup>
 </Project>
