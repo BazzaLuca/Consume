@@ -64,7 +64,7 @@ void PoliceMan::update(float dtAsSeconds)
 
 	if (this->m_IsWalking)
 	{
-		std::cout << this->m_PoliceManSprite.getGlobalBounds().left << std::endl;
+		//std::cout << this->m_PoliceManSprite.getGlobalBounds().left << std::endl;
 
 		if (this->m_PoliceManSprite.getGlobalBounds().contains(this->destinationPoint))
 		{

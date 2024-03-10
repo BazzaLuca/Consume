@@ -42,11 +42,12 @@ Player::Player()
 	this->m_IsJumping = false;
 
 	this->m_JumpSpeed = -500;
+
+	this->m_IsAttacking = false;
 }
 
-void Player::input(sf::RenderWindow& renderWindow)
-{		
-	sf::Event event;
+void Player::input(sf::RenderWindow& renderWindow, sf::Event event)
+{			
 	while (renderWindow.pollEvent(event))
 	{
 		if (event.type == sf::Event::KeyReleased)
@@ -61,6 +62,11 @@ void Player::input(sf::RenderWindow& renderWindow)
 			{
 				// Key is released, set the flag to false
 				this->m_IsGoingRight = false;
+			}
+
+			if (event.key.code == sf::Keyboard::Space)
+			{
+				
 			}
 		}
 

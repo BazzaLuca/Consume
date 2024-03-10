@@ -13,6 +13,8 @@ private:
 
 	std::vector<sf::IntRect> m_Walking_Frames;	
 
+	std::vector<sf::IntRect> m_Attacking_Frames;
+
 	sf::Sprite m_AberrationSprite;
 
 	sf::Vector2f m_Position;
@@ -43,13 +45,15 @@ private:
 
 	float m_JumpSpeed = -100;
 
+	bool m_IsAttacking;
+
 public:
 	Player();
 
 	void setPosition(float x, float y);
 	sf::Vector2f getPosition();
 
-	void input(sf::RenderWindow& renderWindow);
+	void input(sf::RenderWindow& renderWindow, sf::Event event);
 	void update(float dtAsSeconds);
 	void draw(sf::RenderWindow& renderWindow);
 

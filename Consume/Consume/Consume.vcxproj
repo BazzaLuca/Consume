@@ -134,6 +134,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Consume.cpp" />
+    <ClCompile Include="Source\Enemies\Bat.cpp" />
     <ClCompile Include="Source\Enemies\PoliceMan.cpp" />
     <ClCompile Include="Source\Engine\Engine.cpp" />
     <ClCompile Include="Source\GUI\Screen.cpp" />
@@ -141,10 +142,12 @@
     <ClCompile Include="Source\GUI\Screens\Levels\Level_0.cpp" />
     <ClCompile Include="Source\GUI\Screens\MainMenuScreen.cpp" />
     <ClCompile Include="Source\GUI\Screens\LevelManager.cpp" />
+    <ClCompile Include="Source\Player\Bullet.cpp" />
     <ClCompile Include="Source\Player\Player.cpp" />
     <ClCompile Include="Source\TextureHolder\TextureHolder.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Headers\Enemies\Bat.h" />
     <ClInclude Include="Headers\Enemies\PoliceMan.h" />
     <ClInclude Include="Headers\Engine\Engine.h" />
     <ClInclude Include="Headers\GUI\Screen.h" />
@@ -153,12 +156,15 @@
     <ClInclude Include="Headers\GUI\Screens\MainMenuScreen.h" />
     <ClInclude Include="Headers\GUI\Screens\CursorEvent.h" />
     <ClInclude Include="Headers\GUI\Screens\LevelManager.h" />
+    <ClInclude Include="Headers\Player\Bullet.h" />
     <ClInclude Include="Headers\Player\Player.h" />
     <ClInclude Include="Headers\TextureHolder\TextureHolder.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources\Sprites\aberration_placeholder.png" />
+    <Image Include="Resources\Sprites\Bat_Sprite_Sheet.png" />
     <Image Include="Resources\Sprites\brick.png" />
+    <Image Include="Resources\Sprites\bullet.png" />
     <Image Include="Resources\Sprites\lab_background.png" />
     <Image Include="Resources\Sprites\levels_button.png" />
     <Image Include="Resources\Sprites\mainmenu_background.png" />
@@ -166,6 +172,7 @@
     <Image Include="Resources\Sprites\Officer_sheet_unboxed_0.png" />
     <Image Include="Resources\Sprites\platform.png" />
     <Image Include="Resources\Sprites\quit_button.png" />
+    <Image Include="Resources\Sprites\restart_button.png" />
     <Image Include="Resources\Sprites\small_aberration.png" />
     <Image Include="Resources\Sprites\start_button.png" />
   </ItemGroup>

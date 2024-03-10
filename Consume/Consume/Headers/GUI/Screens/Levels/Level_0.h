@@ -4,6 +4,10 @@
 #include "../../../Player/Player.h"
 #include <fstream>
 #include "../../../Enemies/PoliceMan.h"
+#include "../../../Enemies/Bat.h"
+#include "../../../../Headers/TextureHolder/TextureHolder.h"
+#include "../../../../Headers/GUI/Screens/CursorEvent.h"
+#include "../../../Player/Bullet.h"
 
 class Level_0 : public Screen
 {
@@ -25,6 +29,26 @@ private:
 	sf::VertexArray m_BackgroundTiles;
 
 	PoliceMan m_PoliceMan;
+
+	Bat m_Bat;
+
+	bool m_IsGamePaused;
+
+	sf::RectangleShape m_RestartPanel;
+
+	sf::Sprite m_RestartButtonSprite;
+
+	sf::Sprite m_QuitButtonSprite;
+
+	CursorEvent m_CursorEvent;
+
+	float m_ElapsedAnimationTime;
+
+	float m_FireRate;
+
+	std::vector<Bullet> m_Bullets;
+
+	bool m_CanShoot;
 
 public:
 	Level_0(ScreenManager* screenManagerPointer);

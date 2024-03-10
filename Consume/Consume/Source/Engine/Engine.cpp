@@ -2,7 +2,8 @@
 
 Engine::Engine()
 {	
-	this->m_Window.create(sf::VideoMode(800, 600), "Consume");	
+	this->m_Window.create(sf::VideoMode(800, 600), "Consume", sf::Style::None);
+	this->m_Window.setFramerateLimit(60);
 }
 
 void Engine::run()
