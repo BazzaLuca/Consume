@@ -101,7 +101,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)Libraries\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-network-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-network.lib;sfml-audio.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -134,6 +134,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Consume.cpp" />
+    <ClCompile Include="Source\Enemies\PoliceMan.cpp" />
     <ClCompile Include="Source\Engine\Engine.cpp" />
     <ClCompile Include="Source\GUI\Screen.cpp" />
     <ClCompile Include="Source\GUI\ScreenManager.cpp" />
@@ -144,6 +145,7 @@
     <ClCompile Include="Source\TextureHolder\TextureHolder.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Headers\Enemies\PoliceMan.h" />
     <ClInclude Include="Headers\Engine\Engine.h" />
     <ClInclude Include="Headers\GUI\Screen.h" />
     <ClInclude Include="Headers\GUI\ScreenManager.h" />
@@ -161,6 +163,7 @@
     <Image Include="Resources\Sprites\levels_button.png" />
     <Image Include="Resources\Sprites\mainmenu_background.png" />
     <Image Include="Resources\Sprites\MonstersBGLayer0.png" />
+    <Image Include="Resources\Sprites\Officer_sheet_unboxed_0.png" />
     <Image Include="Resources\Sprites\platform.png" />
     <Image Include="Resources\Sprites\quit_button.png" />
     <Image Include="Resources\Sprites\small_aberration.png" />

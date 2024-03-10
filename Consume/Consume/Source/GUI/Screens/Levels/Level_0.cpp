@@ -6,13 +6,13 @@ Level_0::Level_0(ScreenManager* screenManagerPointer)
 	this->setBackground("Resources\\Sprites\\MonstersBGLayer0.png");
 	this->m_Aberration.setPosition(200, 200);
 
-	this->m_FixedCollision_Top_Boxes.push_back(sf::FloatRect(0, 546, 200, 10));
+	this->m_FixedCollision_Top_Boxes.push_back(sf::FloatRect(0, 17*32, 200, 10));
 
-	this->m_FixedCollision_Top_Boxes.push_back(sf::FloatRect(196, 482, 184, 10));
+	this->m_FixedCollision_Top_Boxes.push_back(sf::FloatRect(196, 15*32, 184, 10));
 
-	this->m_FixedCollision_Top_Boxes.push_back(sf::FloatRect(380, 546, 184, 10));
+	this->m_FixedCollision_Top_Boxes.push_back(sf::FloatRect(380, 17 * 32, 12*32, 10));
 
-	this->m_FixedCollision_Top_Boxes.push_back(sf::FloatRect(0, 384, 100, 10));
+	this->m_FixedCollision_Top_Boxes.push_back(sf::FloatRect(0, 384, 128 - 10, 10));
 	
 
 	this->m_FixedCollsion_Left_Boxes.push_back(sf::FloatRect(192, 480, 10, 100));
@@ -22,9 +22,42 @@ Level_0::Level_0(ScreenManager* screenManagerPointer)
 
 	this->m_FixedCollsion_Bottom_Boxes.push_back(sf::FloatRect(0, 416-10, 128-10, 10));
 
+
+	//-----------------------------------------------------------------------------------------------------
+	this->m_FixedCollsion_Bottom_Boxes.push_back(sf::FloatRect(6*32+10, 10*32-10, 3*32-20, 10));
+	this->m_FixedCollsion_Left_Boxes.push_back(sf::FloatRect(6 * 32, 9*32, 10, 32));
+	this->m_FixedCollision_Top_Boxes.push_back(sf::FloatRect(6 * 32+10, 9 * 32, 3 * 32-20, 10));
+	//-----------------------------------------------------------------------------------------------------
+
+	this->m_FixedCollsion_Bottom_Boxes.push_back(sf::FloatRect(10, 7 * 32 - 10, 4 * 32 - 20, 10));
+	this->m_FixedCollision_Top_Boxes.push_back(sf::FloatRect(10, 6 * 32, 4 * 32 - 20, 10));
+	this->m_FixedCollsion_Right_Boxes.push_back(sf::FloatRect(128 - 10, 6*32, 10, 32));
+	//--
+	this->m_FixedCollsion_Left_Boxes.push_back(sf::FloatRect(8 * 32, 4 * 32, 10, 5*32));
+	this->m_FixedCollsion_Bottom_Boxes.push_back(sf::FloatRect(6 * 32 + 10, 4 * 32 - 10, 3 * 32 - 20, 10));
+	this->m_FixedCollsion_Left_Boxes.push_back(sf::FloatRect(6 * 32, 3 * 32, 10, 32));
+	this->m_FixedCollision_Top_Boxes.push_back(sf::FloatRect(6 * 32 + 10, 3 * 32, 3 * 32 - 20, 10));
+	this->m_FixedCollsion_Right_Boxes.push_back(sf::FloatRect(9*32 - 10, 6 * 32, 10, 4*32));
+	this->m_FixedCollsion_Right_Boxes.push_back(sf::FloatRect(9 * 32 - 10, 3 * 32, 10, 2 * 32));
+	this->m_FixedCollision_Top_Boxes.push_back(sf::FloatRect(9 * 32, 5 * 32, 15*32, 10));
+	this->m_FixedCollsion_Bottom_Boxes.push_back(sf::FloatRect(9 * 32, 6 * 32 - 10, 15 * 32, 10));
+
+	//------------------------------------------
+	this->m_FixedCollision_Top_Boxes.push_back(sf::FloatRect(15 * 32, 11 * 32, 5 * 32, 10));
+	this->m_FixedCollsion_Bottom_Boxes.push_back(sf::FloatRect(15 * 32, 13 * 32 - 10, 5 * 32, 10));
+	this->m_FixedCollsion_Left_Boxes.push_back(sf::FloatRect(15 * 32, 11 * 32, 10, 2*32));
+	this->m_FixedCollsion_Right_Boxes.push_back(sf::FloatRect(20 * 32 - 10, 11 * 32, 10, 2 * 32));
+
+	//------------------------------------------
+	this->m_FixedCollsion_Right_Boxes.push_back(sf::FloatRect(1 * 32 - 10, 1 * 32, 10, 16 * 32));
+	this->m_FixedCollsion_Bottom_Boxes.push_back(sf::FloatRect(1 * 32, 1 * 32 - 10, 23 * 32, 10));
+	this->m_FixedCollsion_Left_Boxes.push_back(sf::FloatRect(24 * 32, 1 * 32, 10, 16 * 32));
+
 	this->m_BaxkgrounTiles_Texture.loadFromFile("Resources\\Sprites\\brick.png");
 	this->m_BackgroundTiles.setPrimitiveType(sf::PrimitiveType::Quads);
 	this->m_BackgroundTiles.resize(1000);
+
+	this->m_PoliceMan.setPosition(600, 500);
 
 	// Read highscores
 	std::ifstream scoresFile("Resources\\Files\\level_0.txt");
@@ -76,6 +109,7 @@ void Level_0::input(sf::RenderWindow& renderWindow)
 void Level_0::update(float fps)
 {
 	this->m_Aberration.update(fps);
+	this->m_PoliceMan.update(fps);
 
 	for (int i = 0; i < this->m_FixedCollision_Top_Boxes.size(); i++)
 	{
@@ -156,7 +190,7 @@ void Level_0::draw(sf::RenderWindow& renderWindow)
 		sf::RectangleShape rs;
 		rs.setPosition(this->m_FixedCollsion_Left_Boxes[i].left, this->m_FixedCollsion_Left_Boxes[i].top);
 		rs.setSize(sf::Vector2f(this->m_FixedCollsion_Left_Boxes[i].width, this->m_FixedCollsion_Left_Boxes[i].height));
-		rs.setFillColor(sf::Color(126, 126, 0, 100));
+		rs.setFillColor(sf::Color(126, 126, 0, 200));
 
 		renderWindow.draw(rs);
 	}
@@ -172,4 +206,5 @@ void Level_0::draw(sf::RenderWindow& renderWindow)
 	}	
 
 	this->m_Aberration.draw(renderWindow);
+	this->m_PoliceMan.draw(renderWindow);
 }

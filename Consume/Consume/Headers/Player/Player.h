@@ -1,6 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "../TextureHolder/TextureHolder.h"
+//#include "../TextureHolder/TextureHolder.h"
 
 class Player
 {

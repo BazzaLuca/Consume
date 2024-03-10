@@ -17,7 +17,7 @@ Player::Player()
 
 	this->m_CurrentFrames = this->m_IdleFrames;
 
-	this->m_AberrationSprite = sf::Sprite(this->m_TextureAberration, this->m_Walking_Frames[0]);
+	this->m_AberrationSprite = sf::Sprite(this->m_TextureAberration, this->m_CurrentFrames[0]);
 
 	this->m_AberrationSprite.setOrigin(
 		this->m_AberrationSprite.getLocalBounds().width / 2,

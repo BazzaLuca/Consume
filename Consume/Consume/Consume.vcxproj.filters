@@ -42,6 +42,9 @@
     <ClCompile Include="Source\GUI\Screens\Levels\Level_0.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Enemies\PoliceMan.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\Engine\Engine.h">
@@ -69,6 +72,9 @@
       <Filter>File di intestazione</Filter>
     </ClInclude>
     <ClInclude Include="Headers\GUI\Screens\Levels\Level_0.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Enemies\PoliceMan.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
@@ -101,6 +107,9 @@
       <Filter>File di risorse</Filter>
     </Image>
     <Image Include="Resources\Sprites\brick.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="Resources\Sprites\Officer_sheet_unboxed_0.png">
       <Filter>File di risorse</Filter>
     </Image>
   </ItemGroup>

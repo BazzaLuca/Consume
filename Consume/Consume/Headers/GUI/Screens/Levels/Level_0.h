@@ -3,6 +3,7 @@
 #include "../../ScreenManager.h"
 #include "../../../Player/Player.h"
 #include <fstream>
+#include "../../../Enemies/PoliceMan.h"
 
 class Level_0 : public Screen
 {
@@ -22,6 +23,8 @@ private:
 	sf::Texture m_BaxkgrounTiles_Texture;
 
 	sf::VertexArray m_BackgroundTiles;
+
+	PoliceMan m_PoliceMan;
 
 public:
 	Level_0(ScreenManager* screenManagerPointer);
